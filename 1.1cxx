@@ -1,0 +1,17 @@
+#include <iostream> 
+using namespace std; 
+int main(){
+int i,j,b,c,e,
+n=78487894 ;
+ 
+b=n/2018; //ограничение по х мах
+e=(n/2019)/2;//y должен быть четным.лишний раз не перебираем...
+for(i=1;i<=b;i++){ 
+for(j=1;j<=e;j++){ 
+c=2018*i+2019*2*j;
+if (c==n){ 
+ cout<<'x'<<i<<endl;
+ cout<<'y'<<j*2<<endl;}} 
+} 
+return 0; 
+}
